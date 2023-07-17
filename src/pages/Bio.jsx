@@ -5,7 +5,9 @@ const Bio = () => {
     return (
         <main className="min-h-[calc(100vh-48px)] md:min-h-[calc(100vh-88px)] flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8 py-8 px-8 lg:px-24 mt-[48px] md:mt-[88px]">
             <motion.img 
-                src={michelangelo} alt="michelangelo" 
+                src={michelangelo} 
+                alt="michelangelo" 
+                loading="eager"
                 className="w-full md:w-2/3 lg:w-1/3"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
